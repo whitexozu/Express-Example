@@ -1,0 +1,8 @@
+<h1><%= title %></h1>
+<script>console.log('script tag between h1 and p but..')</script>
+<p><%= description %></p>
+<p><ol>
+<% list.map( val => { %> 
+    <li><%= val.a.props.name %>, <%= val.r.props.fromdate %>, <%= val.b.props.name %></li> 
+<% }) %> 
+</ol></p>
